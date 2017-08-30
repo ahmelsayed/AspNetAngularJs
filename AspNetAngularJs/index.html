@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="aspNetAngularJsApp">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="ng/site.js"></script>
+</head>
+<body>
+    <div ng-controller="HelloController as hello">
+        <h1>{{hello.title}}</h1>
+        <br />
+        <ul>
+            <li ng-repeat="item in hello.myList">
+                <span>{{item}}</span>
+            </li>
+        </ul>
+        <br />
+        <div>Value from server is: {{hello.value}}</div>
+    </div>
+</body>
+</html>
